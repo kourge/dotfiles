@@ -40,7 +40,6 @@ if version >= 703
   set relativenumber
   set undofile
   set colorcolumn=85
-  set wildmenu=list:longest
 end
 
 com W w
