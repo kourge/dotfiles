@@ -36,8 +36,8 @@ set wrap
 set textwidth=80
 set formatoptions=qrn1
 
-if version >= 703
-  set relativenumber
+if v:version >= 703
+  autocmd BufEnter * set relativenumber
   set undofile
   set colorcolumn=85
 end
