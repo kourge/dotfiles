@@ -7,14 +7,14 @@ export HISTCONTROL=erasedups
 export HISTSIZE=100000
 shopt -s histappend
 
-_RESET='\[\033[0m\]'
-_YELLOW='\[\033[0;33m\]'
-_YELLOW_BRIGHT='\[\033[0;33m\]'
-_GREEN='\[\033[0;32m\]'
-_GREEN_BRIGHT='\[\033[1;32m\]'
-_WHITE='\[\033[0;37m\]'
-_CYAN='\[\033[0;36m\]'
-_RED_BRIGHT='\[\033[1;31m\]'
+_RESET='\[\e[0;0m\]'
+_YELLOW='\[\e[0;33m\]'
+_YELLOW_BRIGHT='\[\e[1;33m\]'
+_GREEN='\[\e[0;32m\]'
+_GREEN_BRIGHT='\[\e[1;32m\]'
+_WHITE='\[\e[0;37m\]'
+_CYAN='\[\e[0;36m\]'
+_RED_BRIGHT='\[\e[1;31m\]'
 
 _USER=$_GREEN'\u'$_RESET
 _HOST=$_YELLOW'\H'$_RESET
