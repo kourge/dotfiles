@@ -16,3 +16,16 @@
   interactive = auto
   ui = auto
 
+[color "branch"]
+  current = cyan
+  local = normal
+  remote = yellow
+[color "diff"]
+  meta = white
+  frag = yellow bold
+  old = red
+  new = cyan
+[color "status"]
+  added = cyan
+  changed = yellow
+  untracked = red
