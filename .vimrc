@@ -51,8 +51,15 @@ autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:va
 
 autocmd BufNewFile,BufRead *.ru set syntax=ruby
 autocmd BufNewFile,BufRead *.erb set syntax=eruby
+
 autocmd BufNewFile,BufRead *.inc set syntax=php
 autocmd BufNewFile,BufRead *.module set syntax=php
 
-autocmd BufNewFile,BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
+autocmd BufNewFile,BufRead *.py call SetPythonOptions()
+function SetPythonOptions()
+  set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
+  set shiftwidth=4
+  set softtabstop=4
+  set tabstop=4
+endfunction
 
