@@ -19,6 +19,7 @@ set ruler
 set backspace=indent,eol,start
 set laststatus=2
 set number
+set noesckeys
 
 set ignorecase
 set smartcase
