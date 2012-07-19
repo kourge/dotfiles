@@ -52,6 +52,7 @@ autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:va
 
 autocmd BufNewFile,BufRead *.ru set syntax=ruby
 autocmd BufNewFile,BufRead *.erb set syntax=eruby
+autocmd BufNewFile,BufRead *.less set syntax=css
 
 autocmd BufNewFile,BufRead *.inc set syntax=php
 autocmd BufNewFile,BufRead *.module set syntax=php
