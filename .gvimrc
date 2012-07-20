@@ -9,5 +9,3 @@ if has('gui_macvim')
   set imdisable
 endif
 
-source ./.vimrc
-
