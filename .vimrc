@@ -4,6 +4,7 @@
 
 syntax on
 
+set shortmess+=I
 set modelines=0
 
 set encoding=utf8
