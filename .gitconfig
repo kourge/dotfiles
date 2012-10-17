@@ -2,6 +2,9 @@
   name = Wilson Lee
   email = kourge@gmail.com
 
+[core]
+  excludesfile = ~/.gitignore_global
+
 [alias]
   st = status
   ci = commit
