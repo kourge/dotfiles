@@ -1,4 +1,14 @@
-# Ignore vim temp files
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# vim swap and undo files
 .*.swp
 .*.swo
 .*.un~

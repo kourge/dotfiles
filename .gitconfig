@@ -14,6 +14,9 @@
   lg = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%Creset' --abbrev-commit"
   rblog = "log --color --pretty=format:'%Cred[%h]%Creset %s %C(bold blue)%Creset'"
 
+[core]
+  excludesfile = ~/.gitignore_global
+
 [color]
   diff = auto
   status = auto
