@@ -4,3 +4,4 @@ defutf8 on
 defencoding utf8
 vbell off
 hardstatus off
+defscrollback 10000
