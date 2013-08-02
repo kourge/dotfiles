@@ -42,6 +42,8 @@ if v:version >= 703
   autocmd BufEnter * set relativenumber
   set undofile
   set colorcolumn=85
+  autocmd InsertEnter * :set norelativenumber | set number
+  autocmd InsertLeave * :set nonumber | set relativenumber
 end
 
 com W w
