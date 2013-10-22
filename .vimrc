@@ -68,3 +68,11 @@ function SetPythonOptions()
   set tabstop=4
 endfunction
 
+autocmd BufNewFile,BufRead *.go call SetGoOptions()
+function SetGoOptions()
+  set shiftwidth=4
+  set softtabstop=4
+  set tabstop=4
+  set noexpandtab
+endfunction
+
