@@ -18,9 +18,6 @@
   rblog = "log --color --pretty=format:'%Cred[%h]%Creset %s %C(bold blue)%Creset'"
   recent = "for-each-ref --sort=-committerdate refs/heads/"
 
-[core]
-  excludesfile = ~/.gitignore_global
-
 [diff]
   renames = true
 
