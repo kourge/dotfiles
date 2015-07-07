@@ -21,6 +21,9 @@
 [diff]
   renames = true
 
+[http]
+  postBuffer = 524288000
+
 [color]
   diff = auto
   status = auto
