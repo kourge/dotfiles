@@ -8,6 +8,16 @@ export HISTCONTROL=erasedups
 export HISTSIZE=100000
 shopt -s histappend
 
+sources() {
+  local gitcomplete=/usr/local/etc/bash_completion.d
+  local gitprompt=$gitcomplete/git-prompt.sh
+  local gitcompletion=$gitcomplete/git-completion.bash
+
+  [[ -s $gitprompt ]] && . $gitprompt
+  [[ -s $gitcompletion ]] && . $gitcompletion
+}
+sources
+
 _RESET='\[\e[0;0m\]'
 _YELLOW='\[\e[0;33m\]'
 _YELLOW_BRIGHT='\[\e[1;33m\]'
