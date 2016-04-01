@@ -41,6 +41,7 @@ set formatoptions=qrn1
 if v:version >= 703
   autocmd BufEnter * set relativenumber
   set undofile
+  set undodir=$HOME/.vim/undodir
   set colorcolumn=85
   autocmd InsertEnter * :set norelativenumber | set number
   autocmd InsertLeave * :set nonumber | set relativenumber
