@@ -60,6 +60,13 @@ autocmd BufNewFile,BufRead *.less set syntax=css
 autocmd BufNewFile,BufRead *.inc set syntax=php
 autocmd BufNewFile,BufRead *.module set syntax=php
 
+autocmd BufNewFile,BufRead *.json set syntax=javascript
+autocmd BufNewFile,BufRead *.jsx set syntax=javascript
+autocmd BufNewFile,BufRead *.scala set syntax=scala
+
+autocmd BufNewFile,BufRead *.ts set syntax=typescript
+autocmd BufNewFile,BufRead *.tsx set syntax=typescript
+
 autocmd BufNewFile,BufRead *.py call SetPythonOptions()
 function SetPythonOptions()
   set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
