@@ -1,1 +1,2 @@
+--type-set=ts:ext:ts,tsx
 --pager=less -R
