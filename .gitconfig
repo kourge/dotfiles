@@ -20,6 +20,7 @@
   lg = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%Creset' --abbrev-commit"
   rblog = "log --color --pretty=format:'%Cred[%h]%Creset %s %C(bold blue)%Creset'"
   recent = "for-each-ref --sort=-committerdate --format='%(HEAD) %(objectname:short) %(refname:short)' refs/heads/"
+  meld = !git commit -m '~' && git rebase -i HEAD~2
 
 [diff]
   renames = true
