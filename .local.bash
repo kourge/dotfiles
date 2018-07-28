@@ -36,11 +36,5 @@ export PS1=$_USER'@'$_HOST':'$_DIR$_GIT'\n'$_WHITE'  \$ '$_RESET
 alias be='bundle exec'
 alias git-branch='__git_ps1 "%s\n"'
 alias gb='git-branch'
-alias screen='export SCREENPWD=$(pwd); /usr/bin/env screen'
 
-case "$TERM" in
-  'screen')
-    cd $SCREENPWD
-    ;;
-esac
 
