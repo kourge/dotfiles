@@ -30,7 +30,11 @@ _RED_BRIGHT='\[\e[1;31m\]'
 _USER=$_GREEN'\u'$_RESET
 _HOST=$_YELLOW'\H'$_RESET
 _DIR=$_RED_BRIGHT'\w'$_RESET
-_GIT='$(__git_ps1 " '$_GREEN_BRIGHT'(%s)'$_RESET'")'
+if [[ "LC_ALL=C type -t __git_ps1" = function ]]; then
+  _GIT='$(__git_ps1 " '$_GREEN_BRIGHT'(%s)'$_RESET'")'
+else
+  _GIT=''
+fi
 export PS1=$_USER'@'$_HOST':'$_DIR$_GIT'\n'$_WHITE'  \$ '$_RESET
 
 alias be='bundle exec'
