@@ -30,7 +30,7 @@ _RED_BRIGHT='\[\e[1;31m\]'
 _USER=$_GREEN'\u'$_RESET
 _HOST=$_YELLOW'\H'$_RESET
 _DIR=$_RED_BRIGHT'\w'$_RESET
-if [[ "LC_ALL=C type -t __git_ps1" = function ]]; then
+if [[ "$(LC_ALL=C type -t __git_ps1)" = function ]]; then
   _GIT='$(__git_ps1 " '$_GREEN_BRIGHT'(%s)'$_RESET'")'
 else
   _GIT=''
